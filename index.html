@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- boc icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- swipper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>GRIT</title>
+  </head>
+  <body class="bg=green-400">
+    <!-- Header -->
+
+    <header>
+      <nav
+      id="asosiy"
+        class="bg-white 
+         border-gray-200 px-4 lg:px-6 h-[80px] pt-[25px] dark:bg-gray-800 "
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="" class="flex items-center w-[100px]">
+            <img src="./images/grid.png" class="mr-3 w-[70px]" alt="" />
+            <span
+              class="self-center text-2xl font-bold whitespace-nowrap dark:text-white"
+              >GRIT</span
+            >
+          </a>
+
+          <div class="flex  items-center lg:order-2">
+            <div class="flex items-center justify-center">
+              <select id="language" class=" p-2 h-[40px] w-[60px] text-[16px] border rounded rounded-md border-green-400 ">
+                <option class="font-semibold text-[16px]" value="ru">RUS</option>
+                <option class="font-semibold text-[16px]" value="uz">UZB</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div class=" ml-[40px] hidden lg:inline h-[40px] md:hidden sm:hidden  bg-green-400 duration-300 hover:bg-green-600 justify-center items-center flex px-auto rounded rounded-md">
+              <a href="#contact" class="py-4 px-4 duration-300 text-[22px] text-white">Contact us</a>
+            </div>
+
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#asosiy"
+                  class="block py-2 pr-4 pl-3 rounded duration-500 bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white hover:text-gray-400 text-black"
+                  aria-current="page"
+                  >Asosiy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#haqimizda"
+                  class="block py-2 pr-4 pl-3 hover:text-gray-400 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#xizmatlar"
+                  class="block py-2 pr-4 pl-3 text-black hover:text-gray-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Xizmatalarimiz</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Slider -->
+
+    <section class="slider relative dark:bg-[#272727] z-0 mt-[30px]" >
+      <div class="container mx-auto max-w-[1240px] px-5">
+        <div class="slider__wrapper relative">
+          <div
+            class="swiper mySwiper z-10 mt-5 relative rounded-2xl overflow-hidden"
+          >
+            <div class="swiper-wrapper mx-auto">
+              <!-- dinamic content -->
+            </div>
+            <div
+              class="w-[84px] absolute bottom-10 right-10 z-10 flex items-center justify-between"
+            >
+              <div
+                class="w-9 h-9 swiper__left rounded-full z-10 bg-green-400 shadow-sm hover:bg-green-600  cursor-pointer flex items-center justify-center"
+              >
+                <i class="bx bx-chevron-left text-xl text-black"></i>
+              </div>
+              <div
+                class="w-9 h-9 swiper__right rounded-full z-10 bg-green-400 shadow-sm hover:bg-green-600  cursor-pointer flex items-center justify-center"
+              >
+                <i class="bx bx-chevron-right text-xl text-black"></i>
+              </div>
+            </div>
+            <div
+              class="pagin flex justify-start items-start w-[100px] absolute left-10 bottom-[46px]"
+            >
+              <!-- dinamic pagin elements -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider end -->
+
+    <!-- biz haqimizda -->
+    <div class="container mx-auto mt-[40px] min-h-screen mt-[30px]" id="haqimizda">
+      <h1 class=" mx-auto w-[90%] font-bold text-3xl text-black m-5">
+        Biz haqimizda
+      </h1>
+      <p class=" mx-auto w-[90%] text-[20px] text-gray-500">
+        GRIT sizning ishonchli texnik hamkoringizdir: Ishingizning texnik tomoni
+        haqida gap ketganda, GRIT yordam berish uchun shu yerda. Bizning
+        maqsadimiz sizga SMM, veb-sayt dizayni va yaratish sohasida sifatli va
+        ishonchli yechimlarni taqdim etishdir. Bugun hamkorlikni boshlash va
+        kompaniyangizni yaxshilash uchun biz bilan bog'laning!
+      </p>
+    </div>
+    <!-- end -->
+
+    <!-- Xizmatlar -->
+    <section
+      id="xizmatlar"
+      class="container main-content__services w-[90%] mx-auto py-[50px]"
+    >
+      <div class="title text-center mb-8">
+        <h2 class="text-[32px] font-bold capitalize mb-4 text-black">
+          Bizning xizmatlar
+        </h2>
+      </div>
+      <div class="cards w-full mx-auto">
+        <!-- 1 -->
+        <div
+          class="card hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
+        >
+
+          <div class="w-[20%] items-center justify-center flex">
+              <svg class="w-[120px] fill-green-600" height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x34_15_x2C__Ableton_x2C__application_x2C__daw_x2C__digital_x2C__sequencer"><g><path d="M112.771,227.799H78.802v18.282h33.969V227.799z M112.771,253.589H78.802 
+              v18.282h33.969V253.589z M326.043,222.092h-61.862v18.281h18.4c0.186,0,0.368,0,0.52,0h27.04h0.092h15.811V222.092z     M375.854,247.882h-45.965h-0.091h-15.811v18.28h38.303c0.183-0.029,0.365-0.029,0.552,0h23.012V247.882z M71.292,275.715v-0.091 
+                  v-25.698v-0.092v-0.09v-25.576v-0.123v-0.091v-25.575v-0.092v-0.123v-25.575v-0.091v-0.093v-25.606v-0.091v-0.091V121.01v-0.092    v-0.091V95.129v-0.092V74.65c0-2.045,1.681-3.754,3.755-3.754h361.022c2.073,0,3.751,1.709,3.751,3.754v230.854  
+                    c0,2.074-1.678,3.754-3.751,3.754H75.047c-2.074,0-3.755-1.68-3.755-3.754V275.715z M449.925,61.008 
+                      c-3.419-3.388-8.118-5.523-13.276-5.523H75.32c-5.155,0-9.858,2.105-13.245,5.523c-3.418,3.418-5.524,8.118-5.524,13.276v260.152  
+                        c0,5.157,2.105,9.858,5.524,13.276c3.387,3.387,8.089,5.523,13.245,5.523h361.328c5.158,0,9.857-2.137,13.276-5.523
+                            c3.387-3.418,5.492-8.119,5.492-13.276V74.284c0-5.067-2.015-9.706-5.31-13.094L449.925,61.008z M299.367,360.744h-86.738  
+                              l-17.333,65.862h121.408L299.367,360.744z M375.762,434.083H190.442h-0.091H136.21v10.378h239.551V434.083z M194.198,164.195h69.4  
+                                c2.046,0,3.756,1.679,3.756,3.754v25.789c0,2.076-1.71,3.755-3.756,3.755h-46.725v3.724c0,2.715-2.899,4.639-5.401,3.387  
+                                  c-1.19-0.487-2.106-1.952-2.106-3.387v-3.724h-15.168c-2.046,0-3.755-1.679-3.755-3.755v-25.789   
+                                    C190.442,165.874,192.152,164.195,194.198,164.195z M333.549,240.373h46.056c2.077,0,3.755,1.68,3.755,3.756v25.788 
+                                      c0,2.075-1.678,3.755-3.755,3.755h-23.285v3.723c0,2.717-2.899,4.639-5.401,3.387c-1.189-0.488-2.105-1.953-2.105-3.387v-3.723    h-38.58c-2.074,0-3.752-1.68-3.752-3.755v-22.035h-19.898v3.753c0,2.717-2.899,4.609-5.373,3.357 
+                                          c-1.19-0.457-2.138-1.953-2.138-3.357v-3.753h-18.646c-2.073,0-3.754-1.68-3.754-3.753v-25.79c0-2.076,1.681-3.755,3.754-3.755    h69.373c2.074,0,3.751,1.679,3.751,3.755V240.373z M155.407,91.375h69.4c2.046,0,3.755,1.709,3.755,3.754v25.789   
+                                          c0,2.076-1.709,3.754-3.755,3.754h-7.935v3.754c0,2.717-2.899,4.609-5.401,3.357c-1.19-0.457-2.106-1.952-2.106-3.357v-3.754    h-53.958c-2.046,0-3.755-1.678-3.755-3.754V95.129C151.652,93.084,153.361,91.375,155.407,91.375z M78.802,91.375h37.72  
+                                            c2.078,0,3.755,1.709,3.755,3.754v25.698v0.091v0.092v25.607v0.091v0.091v25.606v0.093v0.091v25.575v0.123v0.092v25.575v0.091    v0.123v25.576v0.09v0.092v25.698c0,2.076-1.678,3.753-3.755,3.753h-37.72v22.402h353.512V78.404H78.802V91.375z M112.771,98.883   
+                                              H78.802v18.282h33.969V98.883z M112.771,124.672H78.802v18.281h33.969V124.672z M112.771,150.461H78.802v18.282h33.969V150.461z     M112.771,176.251H78.802v18.28h33.969V176.251z M259.847,171.703h-61.897v18.282h14.926c0.151-0.03,0.337-0.03,0.519,0h46.452  
+                                                V171.703z M221.056,98.883h-61.897v18.282h53.717c0.151,0,0.337,0,0.519,0h7.662V98.883z M209.366,158.428    c0,1.404,0.916,2.898,2.106,3.357c2.502,1.251,5.401-0.641,5.401-3.357v-7.508c0-1.404-0.916-2.899-2.105-3.357    c-2.502-1.251-5.401,0.641-5.401,3.357V158.428z M209.366,231.218c0,1.435,0.916,2.899,2.106,3.388    c2.502,1.251,5.401-0.672,5.401-3.388v-7.478c0-1.434-0.916-2.899-2.105-3.387c-2.502-1.252-5.401,0.67-5.401,3.387V231.218z     M209.366,261.219c0,1.435,0.916,2.899,2.106,3.387c2.502,1.252,5.401-0.67,5.401-3.387v-7.508c0-1.404-0.916-2.898-2.105-3.357    c-2.502-1.25-5.401,0.641-5.401,3.357V261.219z M139.657,141.55c0,1.435,0.916,2.899,2.105,3.388    c2.502,1.251,5.373-0.672,5.373-3.388v-7.478c0-1.434-0.916-2.898-2.105-3.387c-2.502-1.252-5.373,0.67-5.373,3.387V141.55z     M139.657,171.551c0,1.435,0.916,2.9,2.105,3.388c2.502,1.251,5.373-0.671,5.373-3.388v-7.478c0-1.435-0.916-2.899-2.105-3.387    c-2.502-1.251-5.373,0.671-5.373,3.387V171.551z M139.657,201.553c0,1.434,0.916,2.898,2.105,3.387    c2.502,1.252,5.373-0.67,5.373-3.387v-7.509c0-1.403-0.916-2.868-2.105-3.356c-2.502-1.252-5.373,0.671-5.373,3.356V201.553z     M139.657,231.554c0,1.403,0.916,2.899,2.105,3.356c2.502,1.252,5.373-0.641,5.373-3.356v-7.509c0-1.404-0.916-2.898-2.105-3.356    c-2.502-1.251-5.373,0.64-5.373,3.356V231.554z M139.657,261.555c0,1.404,0.916,2.898,2.105,3.357    c2.502,1.25,5.373-0.641,5.373-3.357v-7.509c0-1.403-0.916-2.898-2.105-3.356c-2.502-1.252-5.373,0.641-5.373,3.356V261.555z     M147.135,104.071c0-1.435-0.916-2.899-2.105-3.388c-2.502-1.221-5.373,0.671-5.373,3.388v7.509c0,1.403,0.916,2.898,2.105,3.356    c2.502,1.251,5.373-0.641,5.373-3.356V104.071z M348.813,141.55c0,1.435,0.916,2.899,2.105,3.388    c2.502,1.251,5.401-0.672,5.401-3.388v-7.478c0-1.434-0.948-2.898-2.106-3.387c-2.502-1.252-5.4,0.67-5.4,3.387V141.55z     M348.813,171.551c0,1.435,0.916,2.9,2.105,3.388c2.502,1.251,5.401-0.671,5.401-3.388v-7.478c0-1.435-0.948-2.899-2.106-3.387  
+                                                  c-2.502-1.251-5.4,0.671-5.4,3.387V171.551z M348.813,201.553c0,1.404,0.916,2.898,2.105,3.357   
+                                                c2.502,1.25,5.401-0.641,5.401-3.357v-7.509c0-1.403-0.948-2.868-2.106-3.356c-2.502-1.252-5.4,0.671-5.4,3.356V201.553z     M348.813,231.554c0,1.403,0.916,2.899,2.105,3.356c2.502,1.252,5.401-0.641,5.401-3.356v-7.509c0-1.404-0.948-2.898-2.106-3.356    c-2.502-1.251-5.4,0.64-5.4,3.356V231.554z M356.319,104.071c0-1.435-0.948-2.899-2.106-3.388c-2.502-1.221-5.4,0.671-5.4,3.388    v7.509c0,1.403,0.916,2.898,2.105,3.356c2.502,1.251,5.401-0.641,5.401-3.356V104.071z M279.071,141.55    c0,1.435,0.947,2.899,2.138,3.388c2.474,1.251,5.373-0.672,5.373-3.388v-7.478c0-1.434-0.916-2.898-2.106-3.387    c-2.502-1.252-5.404,0.67-5.404,3.387V141.55z M279.071,171.551c0,1.435,0.947,2.9,2.138,3.388  
+                                                  c2.474,1.251,5.373-0.671,5.373-3.388v-7.478c0-1.435-0.916-2.899-2.106-3.387c-2.502-1.251-5.404,0.671-5.404,3.387V171.551z     M279.071,201.553c0,1.434,0.947,2.898,2.138,3.387c2.474,1.252,5.373-0.67,5.373-3.387v-7.509c0-1.403-0.916-2.868-2.106-3.356    c-2.502-1.252-5.404,0.671-5.404,3.356V201.553z M279.071,277.516c0,1.436,0.947,2.9,2.138,3.389    c2.474,1.221,5.373-0.672,5.373-3.389v-3.387c0-1.436-0.916-2.899-2.106-3.389c-2.502-1.25-5.404,0.673-5.404,3.389V277.516z     M286.582,104.071c0-1.435-0.916-2.899-2.106-3.388c-2.502-1.221-5.404,0.671-5.404,3.388v7.509c0,1.403,0.947,2.898,2.138,3.356    
+                                                  c2.474,1.251,5.373-0.641,5.373-3.356V104.071z M50.631,468.938c-2.046,0-3.755-1.68-3.755-3.755s1.709-3.754,3.755-3.754h277.58    c2.043,0,3.752,1.679,3.752,3.754s-1.709,3.755-3.752,3.755H50.631z M213.181,485.815c-2.074,0-3.755-1.679-3.755-3.754    s1.681-3.754,3.755-3.754h192.061c2.078,0,3.756,1.679,3.756,3.754s-1.678,3.754-3.756,3.754H213.181z M424.898,485.815    c-2.078,0-3.756-1.679-3.756-3.754s1.678-3.754,3.756-3.754h24.019c2.043,0,3.752,1.679,3.752,3.754s-1.709,3.754-3.752,3.754    H424.898z M39.706,485.297c-2.078,0-3.755-1.679-3.755-3.755c0-2.044,1.678-3.753,3.755-3.753h91.008    c2.078,0,3.755,1.709,3.755,3.753c0,2.076-1.678,3.755-3.755,3.755H39.706z M33.508,166.516c0,2.075-1.709,3.754-3.752,3.754    c-2.078,0-3.755-1.679-3.755-3.754V55.025c0-7.904,3.236-15.107,8.454-20.356c5.25-5.249,12.452-8.484,20.387-8.484h64.063   
+                                                    c2.074,0,3.752,1.679,3.752,3.753c0,2.076-1.678,3.755-3.752,3.755H54.842c-5.889,0-11.23,2.411-15.077,6.257    c-3.875,3.876-6.257,9.217-6.257,15.076V166.516z M457.157,33.692c-2.077,0-3.755-1.679-3.755-3.755    c0-2.074,1.678-3.753,3.755-3.753c7.936,0,15.137,3.266,20.355,8.484c5.219,5.22,8.486,12.422,8.486,20.356v47.123    c0,2.075-1.71,3.754-3.756,3.754c-2.074,0-3.751-1.679-3.751-3.754V55.025c0-5.859-2.411-11.2-6.289-15.046    C468.356,36.104,463.019,33.692,457.157,33.692z M112.771,202.041H78.802v18.28h33.969V202.041z" style="fill-rule:evenodd;clip-rule:evenodd;"/></g></g><g id="Layer_1"/></svg>
+    
+              </div>
+          <div class="w-[80%]">
+            <h3 class="text-3xl font-medium mb-2 capitalize text-black">
+              Professional dizayn
+            </h3>
+            <p class="text-gray-500 mr-2 text-[20px] ">
+              Birinchi taassurot juda muhim. GRIT kompaniyangizga
+              raqobatchilardan ajralib turishiga yordam beradigan professional
+              dizayn xizmatlarini taklif etadi. Bizning iqtidorli dizaynerlar
+              jamoasi sizning brendingiz va maqsadlaringizga mos keladigan noyob
+              va jozibali vizuallarni yaratadi.
+            </p>
+          </div>
+        </div>
+<!-- 2 -->
+        <div
+          class="card my-[40px] hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
+        >
+        <div class="w-[20%] justify-center items-center flex">
+          <svg class="fill-green-600" xmlns="http://www.w3.org/2000/svg" width="100 " height="100" viewBox="0 0 24 24"  rgba(0, 0, 0, 1);transform: ;msFilter:;">
+            <path d="M19 3c-1.654 0-3 1.346-3 3 0 
+            .502.136.968.354 1.385l-1.116 1.302A3.976 3.976 0 0 0 13 8c-.739 0-1.425.216-2.02.566L9.566 
+            7.152A3.449 3.449 0 0 0 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5 4.57 9 6.5 9c.601 0 1.158-.166
+             1.652-.434L9.566 9.98A3.972 3.972 0 0 0 9 12c0 .997.38 1.899.985 2.601l-1.692 1.692.025.025A2.962
+              2.962 0 0 0 7 16c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3c0-.476-.121-.919-.318-1.318l.025.025
+               1.954-1.954c.421.15.867.247 1.339.247 2.206 0 4-1.794 4-4a3.96 3.96 0 0 0-.439-1.785l1.253-1.462c.364.158.764.247 1.186.247
+                1.654 0 3-1.346 3-3s-1.346-3-3-3zM7 20a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM5 5.5C5 4.673 5.673 4 6.5 4S8 4.673 8 5.5 7.327 7 6.5 7 5 6.327 5 5.5zm8 8.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm6-7a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+              </path>
+              </svg>
+        </div>
+          <div class="w-[80%]">
+            <h3 class="text-3xl font-bold font-medium mb-2 capitalize text-black">
+              Aniq SMM yechimlari:
+            </h3>
+            <p class="text-gray-500 mr-2 text-[20px] ">
+              SMM (ijtimoiy media marketingi) kompaniyangizning muvaffaqiyatli
+              onlayn mavjudligining muhim qismidir. GRIT maqsadli auditoriyangiz
+              e'tiborini jalb qilish va ushlab turishingizga yordam beradigan
+              aniq va innovatsion ijtimoiy media strategiyalarini taklif etadi.
+              Biz jozibali kontent yaratish va ijtimoiy tarmoqlardagi
+              mavjudligingizni optimallashtirish uchun siz bilan birga
+              ishlaydigan shaxsiy SMM rejasini ishlab chiqamiz.
+            </p>
+          </div>
+        </div>
+<!-- 3 -->
+        <div
+          class="card hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
+        >
+          <div class="w-[20%] items-center justify-center flex">
+            <svg
+              class="fill-green-600 w-[100px]"
+              id="Layer_1_1_"
+              style="enable-background: new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <path
+                  d="M61,41V12c0-2.757-2.243-5-5-5h-3V1H11v6H8c-2.757,0-5,2.243-5,5v29H1v17c0,2.757,2.243,5,5,5h52c2.757,0,5-2.243,5-5V41   H61z M56,9c1.654,0,3,1.346,3,3v29h-2V13c0-1.103-0.897-2-2-2h-2V9H56z M53,39V13h2v28H9V13h2v26H53z M13,3h38v34H13V3z M5,12   c0-1.654,1.346-3,3-3h3v2H9c-1.103,0-2,0.897-2,2v28H5V12z M61,43v10h-2v-8H5v8H3V43H61z M57,49h-2v-2h2V49z M53,49h-2v-2h2V49z    M49,49h-2v-2h2V49z M45,49h-2v-2h2V49z M41,49h-2v-2h2V49z M35,53v-2h2v2H35z M23,53v-2h2v2H23z M27,51h2v2h-2V51z M31,51h2v2h-2   V51z M39,51h2v2h-2V51z M37,49h-2v-2h2V49z M33,49h-2v-2h2V49z M29,49h-2v-2h2V49z M25,49h-2v-2h2V49z M21,49h-2v-2h2V49z M17,49   h-2v-2h2V49z M13,49h-2v-2h2V49z M9,49H7v-2h2V49z M7,51h2v2H7V51z M11,51h2v2h-2V51z M15,51h2v2h-2V51z M19,51h2v2h-2V51z M25,55   h14v1c0,0.551-0.449,1-1,1H26c-0.551,0-1-0.449-1-1V55z M43,51h2v2h-2V51z M47,51h2v2h-2V51z M51,51h2v2h-2V51z M55,51h2v2h-2V51z    M58,61H6c-1.654,0-3-1.346-3-3v-3h20v1c0,1.654,1.346,3,3,3h12c1.654,0,3-1.346,3-3v-1h20v3C61,59.654,59.654,61,58,61z"
+                />
+                <rect height="2" width="2" x="57" y="57" />
+                <rect height="2" width="2" x="53" y="57" />
+                <rect height="2" width="2" x="49" y="57" />
+                <rect height="2" width="2" x="15" y="33" />
+                <rect height="2" width="26" x="19" y="33" />
+                <rect height="2" width="2" x="47" y="33" />
+                <path
+                  d="M32,5c-7.168,0-13,5.832-13,13s5.832,13,13,13s13-5.832,13-13S39.168,5,32,5z M42.949,16.993   C41.92,17.641,40.755,18,39.536,18C38.138,18,37,16.862,37,15.464c0-1.211-0.472-2.351-1.329-3.207l-1.515-1.515   C33.411,9.997,33,9.005,33,7.95c0-0.305,0.044-0.602,0.111-0.893C38.326,7.582,42.472,11.765,42.949,16.993z M26.722,8.353   c1.434,2.043,1.703,4.39,0.559,5.684c-1.132,1.281-3.412,1.216-5.507-0.065C22.722,11.574,24.482,9.584,26.722,8.353z    M25.65,26.966c0.872-1.419,1.35-3.063,1.35-4.73C27,21.003,28.003,20,29.236,20c0.345,0,0.69,0.082,1,0.236   c3.155,1.577,5.414,4.385,6.32,7.763c-1.39,0.636-2.93,1-4.556,1C29.634,29,27.446,28.242,25.65,26.966z M38.349,26.967   c-1.14-3.703-3.707-6.763-7.219-8.519C30.545,18.155,29.89,18,29.236,18C26.9,18,25,19.9,25,22.236c0,1.192-0.315,2.369-0.891,3.41   C22.188,23.665,21,20.97,21,18c0-0.696,0.072-1.375,0.197-2.036c1.253,0.678,2.547,1.018,3.749,1.018   c1.512,0,2.878-0.539,3.835-1.621c1.711-1.936,1.589-5.071-0.18-7.817c0.79-0.258,1.619-0.425,2.476-0.497   C31.03,7.344,31,7.645,31,7.95c0,1.589,0.619,3.083,1.743,4.207l1.515,1.515C34.736,14.15,35,14.787,35,15.464   C35,17.965,37.035,20,39.536,20c1.183,0,2.323-0.268,3.386-0.738C42.557,22.438,40.834,25.202,38.349,26.967z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="w-[80%]">
+            <h3 class="text-3xl font-medium  capitalize text-black">
+              Veb-sayt yaratish
+            </h3>
+            <p class="text-gray-500 text-[20px] mr-2 ">
+              Veb-sayt kompaniyangizning onlayn dunyoda qo'ng'iroq kartasidir.
+              GRIT sizning o'ziga xosligingizni aks ettiradigan va biznesingizni
+              samarali taqdim etadigan veb-saytlarni to'liq yaratish va
+              optimallashtirishni taklif qiladi. Biz nafaqat e'tiborni
+              tortadigan, balki raqobatchilardan ajralib turadigan veb-sayt
+              yaratish uchun sizning ehtiyojlaringiz va maqsadlaringizni
+              inobatga olamiz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+
+
+
+<!-- Contact -->
+    <section class=" w-[70%]  mx-auto  dark:bg-gray-900" id="contact">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-black"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="mb-8 lg:mb-16 font-light text-center text-black dark:text-gray-400 sm:text-xl"
+        >  
+Biz bilan ijtimoiy tarmoqlarda yoki shaklni to'ldirish orqali bog'lanishingiz mumkin
+        </p>
+        <form action="#" class="space-y-8">
+          <div class="">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium  text-black"
+              >Emailingizni kiriting</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-black text-sm rounded-lg   block w-full p-2.5  placeholder-black"
+              placeholder="name@email.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="block mb-2 text-sm font-medium text-black "
+              >Ismingiz</label
+            >
+            <input
+              type="isim"
+              id="ism"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-black text-sm rounded-lg   block w-full p-2.5  placeholder-black"
+              placeholder="Ismingiz"
+              required
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-black "
+              >Xabaringizni kiriting</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="block p-2.5 w-full placeholder-black  bg-gray-50 text-sm  rounded-lg shadow-sm border border-gray-300"
+              placeholder="comment..."
+            ></textarea>
+          </div>
+          <button
+          class=""
+            type="submit"
+          >  <a href="https://darkdp.dev@gmail.com" class="p-4  flex justify-center items-center my-auto max-w-[100px] sm:max-w-[205px]  py-2 bg-[#13ff00] hover:bg-green-600 rounded-lg  mt-5 sm:mt-10">
+                                <i class='bx bxs-envelope text-xl sm:text-3xl mr-2 sm:mr-5' ></i> 
+                                <p class=" text-lg sm:text-xl font-medium">
+                                    Send
+                                </p>
+                                
+              </a>
+          </button>
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-white rounded-lg  m-4 dark:bg-gray-800">
+      <div class="h-[1px] bg-gray-200 shadow w-full"></div>
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 Tashkent, Uzbekistan
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#asosiy" class="mr-4 hover:underline md:mr-6">Asosiy</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Biz haqimizda</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Xizmatlar</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+
+
+
+  </body>
+  <script src="./app.js"></script>
+  <script src="./utils.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper__right",
+        prevEl: ".swiper__left",
+      },
+
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
+      // mousewheel: {
+      //   invert: true,
+      // },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
