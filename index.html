@@ -14,16 +14,34 @@
       rel="stylesheet"
     />
 
-    <!-- swipper js -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <title>GRIT</title>
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      /* .swiper {
+        width: 80%;
+        height: 70%;
+      } */
+
+  
+
+    </style>
+
   </head>
   <body class="bg=green-400">
     <!-- Header -->
@@ -127,61 +145,43 @@
       </nav>
     </header>
 
-    <!-- Slider -->
+      <!-- Swiper -->
+  <div class="swiper mySwiper mt-[30px]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex justify-center items-center "><img class="sm:w-[180px] sm:h-[180px] md:w-[300px] md:h-[300px] lg:w-[600px] lg:h-[600px]" src="./images/1a.png" alt=""></div>
+      <div class="swiper-slide flex justify-center items-center "><img class="sm:w-[180px] sm:h-[180px] md:w-[300px] md:h-[300px] lg:w-[600px] lg:h-[600px]" src="./images/2a.png" alt=""></div>
+      <div class="swiper-slide flex justify-center items-center "><img class="sm:w-[180px] sm:h-[180px] md:w-[300px] md:h-[300px] lg:w-[600px] lg:h-[600px]" src="./images/3a.png" alt=""></div>
+      <div class="swiper-slide flex justify-center items-center "><img class="sm:w-[180px] sm:h-[180px] md:w-[300px] md:h-[300px] lg:w-[600px] lg:h-[600px]" src="./images/4a.png" alt=""></div>
+      <div class="swiper-slide flex justify-center items-center "><img class="sm:w-[180px] sm:h-[180px] md:w-[300px] md:h-[300px] lg:w-[600px] lg:h-[600px]" src="./images/5a.png" alt=""></div>
 
-    <section class="slider relative dark:bg-[#272727] z-0 mt-[30px]" >
-      <div class="container mx-auto max-w-[1240px] px-5">
-        <div class="slider__wrapper relative">
-          <div
-            class="swiper mySwiper z-10 mt-5 relative rounded-2xl overflow-hidden"
-          >
-            <div class="swiper-wrapper mx-auto">
-              <!-- dinamic content -->
-            </div>
-            <div
-              class="w-[84px] absolute bottom-10 right-10 z-10 flex items-center justify-between"
-            >
-              <div
-                class="w-9 h-9 swiper__left rounded-full z-10 bg-green-400 shadow-sm hover:bg-green-600  cursor-pointer flex items-center justify-center"
-              >
-                <i class="bx bx-chevron-left text-xl text-black"></i>
-              </div>
-              <div
-                class="w-9 h-9 swiper__right rounded-full z-10 bg-green-400 shadow-sm hover:bg-green-600  cursor-pointer flex items-center justify-center"
-              >
-                <i class="bx bx-chevron-right text-xl text-black"></i>
-              </div>
-            </div>
-            <div
-              class="pagin flex justify-start items-start w-[100px] absolute left-10 bottom-[46px]"
-            >
-              <!-- dinamic pagin elements -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Slider end -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
     <!-- biz haqimizda -->
-    <div class="container mx-auto mt-[40px] min-h-screen mt-[30px]" id="haqimizda">
-      <h1 class=" mx-auto w-[90%] font-bold text-3xl text-black m-5">
-        Biz haqimizda
-      </h1>
-      <p class=" mx-auto w-[90%] text-[20px] text-gray-500">
-        GRIT sizning ishonchli texnik hamkoringizdir: Ishingizning texnik tomoni
-        haqida gap ketganda, GRIT yordam berish uchun shu yerda. Bizning
-        maqsadimiz sizga SMM, veb-sayt dizayni va yaratish sohasida sifatli va
-        ishonchli yechimlarni taqdim etishdir. Bugun hamkorlikni boshlash va
-        kompaniyangizni yaxshilash uchun biz bilan bog'laning!
-      </p>
-    </div>
+<section>
+  <div class="container mx-auto mt-[50px]  mt-[30px]" id="haqimizda">
+    <h1 class=" mx-auto w-[90%] font-bold text-3xl text-black m-5">
+      Biz haqimizda
+    </h1>
+    <p class=" mx-auto w-[90%] text-[20px] text-gray-500">
+      GRIT sizning ishonchli texnik hamkoringizdir: Ishingizning texnik tomoni
+      haqida gap ketganda, GRIT yordam berish uchun shu yerda. Bizning
+      maqsadimiz sizga SMM, veb-sayt dizayni va yaratish sohasida sifatli va
+      ishonchli yechimlarni taqdim etishdir. Bugun hamkorlikni boshlash va
+      kompaniyangizni yaxshilash uchun biz bilan bog'laning!
+    </p>
+  </div>
+  <div class="container mx-auto mt-[40px]">
+    <img class=" mx-auto w-[90%]" src="./images/4.png" alt="">
+  </div>
+</section>
     <!-- end -->
 
-    <!-- Xizmatlar -->
-    <section
+<!-- Xizmatlar -->
+<section
       id="xizmatlar"
-      class="container main-content__services w-[90%] mx-auto py-[50px]"
+      class="container main-content__services w-[90%] mt-[40px] mx-auto py-[50px]"
     >
       <div class="title text-center mb-8">
         <h2 class="text-[32px] font-bold capitalize mb-4 text-black">
@@ -191,7 +191,7 @@
       <div class="cards w-full mx-auto">
         <!-- 1 -->
         <div
-          class="card hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
+          class="card bg-white hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
         >
 
           <div class="w-[20%] items-center justify-center flex">
@@ -235,7 +235,7 @@
         </div>
 <!-- 2 -->
         <div
-          class="card my-[40px] hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
+          class="card bg-white my-[40px] hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
         >
         <div class="w-[20%] justify-center items-center flex">
           <svg class="fill-green-600" xmlns="http://www.w3.org/2000/svg" width="100 " height="100" viewBox="0 0 24 24"  rgba(0, 0, 0, 1);transform: ;msFilter:;">
@@ -266,7 +266,7 @@
         </div>
 <!-- 3 -->
         <div
-          class="card hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
+          class="card bg-white hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto flex items-center sm:mb-6 border border-green-400 rounded-md h-[220px]"
         >
           <div class="w-[20%] items-center justify-center flex">
             <svg
@@ -311,14 +311,14 @@
           </div>
         </div>
       </div>
-    </section>
+ </section>
     <!-- end -->
 
 
 
 
 <!-- Contact -->
-    <section class=" w-[70%]  mx-auto  dark:bg-gray-900" id="contact">
+    <section class=" w-[60%]  mx-auto bg-white  dark:bg-gray-900" id="contact">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2
           class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-black"
@@ -389,9 +389,6 @@ Biz bilan ijtimoiy tarmoqlarda yoki shaklni to'ldirish orqali bog'lanishingiz mu
 
 
 
-
-
-
     <!-- Footer -->
 
     <footer class="bg-white rounded-lg  m-4 dark:bg-gray-800">
@@ -422,35 +419,23 @@ Biz bilan ijtimoiy tarmoqlarda yoki shaklni to'ldirish orqali bog'lanishingiz mu
 
 
 
-
-
   </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   <script src="./app.js"></script>
   <script src="./utils.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper__right",
-        prevEl: ".swiper__left",
-      },
 
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
-      },
-      // mousewheel: {
-      //   invert: true,
-      // },
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-        clickable: true,
-      },
-    });
-  </script>
 </html>
