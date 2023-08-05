@@ -28,6 +28,11 @@
         height: 100%;
       }
     </style>
+    <style>
+      .active {
+        background-color: #38a169;
+      }
+    </style>
   </head>
   <body class="bg=green-400">
     <!-- Header -->
@@ -53,28 +58,32 @@
           </a>
 
           <div class="flex items-center lg:order-2">
-            <div class="flex items-center justify-center">
-              <select
-                id="language"
-                class="p-2 h-[40px] w-[60px] text-[16px] border rounded rounded-md border-green-400"
+            <div class="flex items-center space-x-2">
+              <button
+                onclick="changeLanguage('es')"
+                id="btnRus"
+                class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600"
+                onclick="setLanguage('rus')"
               >
-                <option class="font-semibold text-[16px]" value="ru">
-                  RUS
-                </option>
-                <option class="font-semibold text-[16px]" value="uz">
-                  UZB
-                </option>
-                <!-- Add more options as needed -->
-              </select>
+                Рус
+              </button>
+              <button
+                onclick="changeLanguage('eng')"
+                id="btnEng"
+                class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600"
+                onclick="setLanguage('eng')"
+              >
+                Uzb
+              </button>
             </div>
-            <div
-              class="ml-[40px] hidden lg:inline h-[40px] md:hidden sm:hidden bg-green-400 duration-300 hover:bg-green-600 justify-center items-center flex px-auto rounded rounded-md"
-            >
-              <a
-                href="#contact"
-                class="py-4 px-4 duration-300 text-[22px] text-white"
-                >Contact us</a
-              >
+            <div id="#contact" class="ml-2 flex justify-center items-center">
+              <a href="#contact">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Contact Us
+                </button>
+              </a>
             </div>
 
             <button
@@ -202,11 +211,12 @@
     <!-- biz haqimizda -->
     <section>
       <div class="container mx-auto mt-[50px] mt-[30px]" id="haqimizda">
-        <h1 class="mx-auto w-[90%] font-bold text-3xl text-black m-5">
+        <h1 id="bizhaqimizda" class="mx-auto w-[90%] font-bold text-3xl text-black m-5">
           Biz haqimizda
         </h1>
         <p
-          class="mx-auto w-[90%] text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-gray-500"
+          id="bizhaqimizdatext"
+          class="mx-auto w-[90%] text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-black"
         >
           GRIT sizning ishonchli texnik hamkoringizdir: Ishingizning texnik
           tomoni haqida gap ketganda, GRIT yordam berish uchun shu yerda.
@@ -216,7 +226,7 @@
         </p>
       </div>
       <div class="container mx-auto mt-[40px]">
-        <img class="mx-auto w-[90%]" src="./images/4.png" alt="" />
+        <img class="mx-auto w-[90%]" src="./images/about.png" alt="" />
       </div>
     </section>
     <!-- end -->
@@ -303,7 +313,7 @@
         </div>
         <!-- 2 -->
         <div
-          class="card my-[30px] bg-white hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto md:flex lg:flex flex-col items-center sm:mb-6 border border-green-400 rounded-md h-[300px] sm:h-[330px] md:h-[300px] lg:h-[220px]"
+          class="card my-[30px] bg-white hover:shadow-2xl shadow duration-300 hover:translate-y-2 bg-[] w-full sm:w-[48.5%] md:w-[90%] mx-auto md:flex lg:flex flex items-center sm:mb-6 border border-green-400 rounded-md h-[300px] sm:h-[330px] md:h-[300px] lg:h-[220px]"
         >
           <div
             class="w-[35%] sm:w-[35%] md:w-[25%] lg:w-[20%] items-center justify-center flex"
@@ -398,7 +408,11 @@
     <!-- end -->
 
     <!-- Tarif -->
+<section id="tarif">
+  <div>
 
+  </div>
+</section>
     <!-- Tarif end -->
 
     <!-- Contact -->
@@ -497,8 +511,37 @@
       </div>
     </footer>
     <!-- end -->
-
   </body>
+
+  <script>
+    function setLanguage(language) {
+      // Perform actions to switch the language
+      // For this example, we'll just change the button texts
+      if (language === "rus") {
+        document.getElementById("btnRus").innerText = "Рус";
+        document.getElementById("btnEng").innerText = "Eng";
+      } else if (language === "eng") {
+        document.getElementById("btnRus").innerText = "Rus";
+        document.getElementById("btnEng").innerText = "Eng";
+      }
+
+      // Remove the 'active' class from all buttons
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((button) => {
+        button.classList.remove("active");
+      });
+
+      // Add the 'active' class to the clicked button
+      const activeButton = document.getElementById(
+        `btn${language.charAt(0).toUpperCase() + language.slice(1)}`
+      );
+      activeButton.classList.add("active");
+
+      // You can add your own logic here to change the language in your application
+      // For instance, you can use i18next or other libraries for language translation
+    }
+  </script>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
