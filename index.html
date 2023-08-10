@@ -15,19 +15,12 @@
     />
     <title>GRIT</title>
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-    </style>
     <style>
       .active {
         background-color: #38a169;
@@ -58,13 +51,14 @@
             >
           </a>
           <div class="Navbar__Link Navbar__Link-toggle">
-            <i class="fas fa-bars"></i>
+            <span class="text-3xl cursor-pointer sm:hidden block ">
+              <i  class="bt-menu-open bx bx-menu text-black"></i>
+              <i  class="bt-menu-close bx bx-x text-black hidden"></i>
+            </span>
           </div>
 
-  
-
           <div
-            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            class="hidden sm:hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
 
@@ -265,12 +259,13 @@
           <div
             class="items-center flex w-full md:w-1/3 md:pr-3 2xl:pr-4 mb-7 md:mb-0"
           >
-            <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black">
+            <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black"
+            id="hizmat_t_1">
               Aniq SMM yechimlari:
             </h3>
           </div>
           <div class="study-about w-full md:w-2/3 md:pl-6 2xl:pl-8">
-            <p class="text-gray-500">
+            <p class="text-gray-500" id="hizmat_text_1">
               SMM (ijtimoiy media marketingi) kompaniyangizning muvaffaqiyatli onlayn mavjudligining muhim qismidir. 
                GRIT maqsadli auditoriyangiz e'tiborini jalb qilish va ushlab turishingizga yordam beradigan aniq va 
                innovatsion ijtimoiy media strategiyalarini taklif etadi.  Biz jozibali kontent yaratish va ijtimoiy 
@@ -285,12 +280,13 @@
           <div
             class="items-center flex w-full md:w-1/3 md:pr-3 2xl:pr-4 mb-7 md:mb-0"
           >
-            <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black">
+            <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black"
+            id="hizmat_t_2">
               Professional dizayn:
             </h3>
           </div>
           <div class="study-about w-full md:w-2/3 md:pl-6 2xl:pl-8">
-            <p class="text-gray-500">
+            <p class="text-gray-500" id="hizmat_text_2">
               Birinchi taassurot juda muhim.
                 GRIT kompaniyangizga raqobatchilardan ajralib turishiga yordam beradigan 
                 professional dizayn xizmatlarini taklif etadi.  Bizning iqtidorli dizaynerlar 
@@ -305,12 +301,13 @@
           <div
             class="items-center flex w-full md:w-1/3 md:pr-3 2xl:pr-4 mb-7 md:mb-0"
           >
-            <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black">
+            <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black"
+            id="hizmat_t_3">
               Veb-sayt yaratish:
             </h3>
           </div>
           <div class="study-about w-full md:w-2/3 md:pl-6 2xl:pl-8">
-            <p class="text-gray-500">
+            <p class="text-gray-500" id="hizmat_text_3">
               Veb-sayt kompaniyangizning onlayn dunyoda qo'ng'iroq kartasidir. 
                GRIT sizning o'ziga xosligingizni aks ettiradigan va biznesingizni 
                samarali taqdim etadigan veb-saytlarni to'liq yaratish va optimallashtirishni 
@@ -331,7 +328,7 @@
   >
     <div class="title text-center py-8">
       <h2 class="text-[32px] font-bold capitalize text-black mb-4">
-        Bizning xizmatlar
+        Bizning Tariflarimiz
       </h2>
       <p class="max-w-[438px] text-gray-500 mx-auto">
         Tariflarimiz haqida ma'lumot:
@@ -345,16 +342,13 @@
         <div
           class="items-center flex w-full md:w-1/3 md:pr-3 2xl:pr-4 mb-7 md:mb-0"
         >
-          <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black">
-            Aniq SMM yechimlari:
+          <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black" id="tairf_t_1">
+            "SMM+Dizayn" tarifi 299$ turadi.
           </h3>
         </div>
         <div class="study-about w-full md:w-2/3 md:pl-6 2xl:pl-8">
-          <p class="text-gray-500">
-            SMM (ijtimoiy media marketingi) kompaniyangizning muvaffaqiyatli onlayn mavjudligining muhim qismidir. 
-             GRIT maqsadli auditoriyangiz e'tiborini jalb qilish va ushlab turishingizga yordam beradigan aniq va 
-             innovatsion ijtimoiy media strategiyalarini taklif etadi.  Biz jozibali kontent yaratish va ijtimoiy 
-             tarmoqlardagi mavjudligingizni optimallashtirish uchun siz bilan birga ishlaydigan shaxsiy SMM rejasini ishlab chiqamiz.
+          <p class="text-gray-500" id="tarif_text_1">
+            U ijtimoiy media (SMM) va dizayn xizmatlarini o'z ichiga oladi.
           </p>
         </div>
       </div>
@@ -365,17 +359,13 @@
         <div
           class="items-center flex w-full md:w-1/3 md:pr-3 2xl:pr-4 mb-7 md:mb-0"
         >
-          <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black">
-            Professional dizayn:
+          <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black" id="tairf_t_2">
+            "Veb-sayt" rejasi 199 dollar turadi
           </h3>
         </div>
         <div class="study-about w-full md:w-2/3 md:pl-6 2xl:pl-8">
-          <p class="text-gray-500">
-            Birinchi taassurot juda muhim.
-              GRIT kompaniyangizga raqobatchilardan ajralib turishiga yordam beradigan 
-              professional dizayn xizmatlarini taklif etadi.  Bizning iqtidorli dizaynerlar 
-              jamoasi sizning brendingiz va maqsadlaringizga mos keladigan noyob va jozibali 
-              vizuallarni yaratadi.  </p>
+          <p class="text-gray-500" id="tarif_text_2">
+            U veb-sayt yaratish va rivojlantirish xizmatlarini o'z ichiga oladi </p>
         </div>
       </div>
 
@@ -385,17 +375,13 @@
         <div
           class="items-center flex w-full md:w-1/3 md:pr-3 2xl:pr-4 mb-7 md:mb-0"
         >
-          <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black">
-            Veb-sayt yaratish:
+          <h3 class="text-[20px] mb-3 md:mb-7 font-medium text-black" id="tairf_t_3">
+            "SMM+Dizayn+Veb-sayt" tarifi 399$ turadi. 
           </h3>
         </div>
         <div class="study-about w-full md:w-2/3 md:pl-6 2xl:pl-8">
-          <p class="text-gray-500">
-            Veb-sayt kompaniyangizning onlayn dunyoda qo'ng'iroq kartasidir. 
-             GRIT sizning o'ziga xosligingizni aks ettiradigan va biznesingizni 
-             samarali taqdim etadigan veb-saytlarni to'liq yaratish va optimallashtirishni 
-             taklif qiladi.  Biz nafaqat e'tiborni tortadigan, balki raqobatchilardan ajralib
-              turadigan veb-sayt yaratish uchun sizning ehtiyojlaringiz va maqsadlaringizni inobatga olamiz.
+          <p class="text-gray-500" id="tarif_text_3">
+            U ijtimoiy media, veb-sayt dizayni va ishlab chiqish xizmatlarini o'z ichiga oladi.
           </p>
         </div>
       </div>
